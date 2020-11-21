@@ -20,19 +20,19 @@ fixtures = [
 ]
 # include js, css files in header of desk.html
 # app_include_css = "/assets/extraesia/css/extraesia.css"
-# app_include_js = "/assets/extraesia/js/extraesia.js"
+app_include_js = "/assets/js/extraesia.min.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/extraesia/css/extraesia.css"
-# web_include_js = "/assets/extraesia/js/extraesia.js"
+web_include_js = "/assets/js/extraesia.min.js"
 
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"Item" : "public/js/list_view.js"}
+doctype_js = {"Stock Entry" : "public/js/stock_entry.js"}
 doctype_list_js = {"Item" : "public/js/list_view.js"}
-# doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
+# doctype_tree_js = {"doctype" : "public/js/doctype_calendar.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
 # Home Pages
