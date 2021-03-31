@@ -1,5 +1,7 @@
 {
 	"js/extraesia.min.js": [
-		"public/js/link.js"
+		"public/js/link.js",
+		"public/js/stock_entry.js",
+		"public/js/util.js"
     ]
 }

@@ -71,7 +71,8 @@ const replace_account = (value, items) => {
                 },
                 callback: function(r) {
                     $.each(items, function (i, d) {
-                        d.expense_account = r.message[i]
+                        let account = findItemAccount(r.message, d)
+                        d.expense_account = account                            
                         // d.updated = false
                     });
                 }
