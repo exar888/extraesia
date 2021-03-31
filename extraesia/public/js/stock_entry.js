@@ -43,8 +43,9 @@ frappe.ui.form.on('Stock Entry Detail', {
                                             item_codes: itemCodes
                                         },
                                         callback: function(r) {
-                                            r.message.expense_account = r.message[0]
-                                            d.expense_account = r.message[0]
+                                            let account = findItemAccount(r.message, d)
+                                            r.message.expense_account = account
+                                            d.expense_account = account
                                         }
                                     });
                                     break
@@ -123,7 +124,8 @@ erpnext.stock.StockEntry = erpnext.stock.StockEntry.extend({
                     },
                     callback: function(r) {
                         $.each(me.frm.doc.items, function (i, d) {
-                            d.expense_account = r.message[i]
+                            let account = findItemAccount(r.message, d)
+                            d.expense_account = account
                         });
                     }
                 });
