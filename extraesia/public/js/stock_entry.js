@@ -1,3 +1,11 @@
+const findItemAccount = (message, item) => {
+	let account = message[item.item_code]
+    if (account == null) {
+        account = message[item.item_group]
+    }
+    return account || "";
+};
+
 frappe.ui.form.on('Stock Entry Detail', {
     item_code: function(frm, cdt, cdn) {
         var d = locals[cdt][cdn];
