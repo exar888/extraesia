@@ -51,14 +51,6 @@ const set_diff_account = (doctype, value) => {
     // }  
 }
 
-const findItemAccount = (message, item) => {
-	let account = message[item.item_code]
-    if (account == null) {
-        account = message[item.item_group]
-    }
-    return account || "";
-};
-
 const replace_account = (value, items) => {
     var me = this;
     switch (value) {

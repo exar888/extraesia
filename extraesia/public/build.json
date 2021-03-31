@@ -1,5 +1,6 @@
 {
 	"js/extraesia.min.js": [
+		"public/js/util.js",
 		"public/js/link.js"
     ]
 }
