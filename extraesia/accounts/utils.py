@@ -21,7 +21,7 @@ def get_manufacture_account(item_codes):
             continue
         
         # if null, select manufacture_difference_account from tabItem Default where parent = item_group and company = company
-        accounts[item.item_group] = get_manufacture_account_by(company, item.item_group)
+        accounts[item.item_code] = get_manufacture_account_by(company, item.item_group)
 
     return accounts
 
